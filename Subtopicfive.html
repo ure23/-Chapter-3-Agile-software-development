@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>3.5 Scaling agile methods</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+<body>
+
+  <header>
+    <h1>3.5 Scaling agile methods</h1>
+  </header>
+
+  <div style="max-width: 720px; margin: 40px auto; line-height: 1.6; font-family: Arial, Helvetica, sans-serif;">
+
+    <h2 style="margin-top:0; text-align:center;">Agile Methods</h2>
+
+    <p style="text-align: justify; text-justify: inter-word;">
+  <article>
+    <section>
+      <p>
+        Agile methods were developed for use by small programming teams who could
+        work together in the same room and communicate informally. Agile methods have
+        therefore been mostly used for the development of small and medium-sized systems.
+        Of course, the need for faster delivery of software, which is more suited to customer
+        needs, also applies to larger systems. Consequently, there has been a great deal of
+        interest in scaling agile methods to cope with larger systems, developed by large
+        organizations.
+      </p>
+
+      <p><small>3.5 ■ Scaling agile methods — p.75</small></p>
+
+      <p>
+        Denning et al. (2008) argue that the only way to avoid common software engineering problems, such as systems that don’t meet customer needs and budget overruns, is
+        to find ways of making agile methods work for large systems. Leffingwell (2007) discusses which agile practices scale to large systems development. Moore and Spens
+        (2008) report on their experience of using an agile approach to develop a large medical
+        system with 300 developers working in geographically distributed teams.
+      </p>
+    </section>
+
+    <section>
+      <h2>How large system development differs</h2>
+      <p>Large software system development is different from small system development
+      in a number of ways:</p>
+
+      <ol>
+        <li>
+          Large systems are usually collections of separate, communicating systems,
+          where separate teams develop each system. Frequently, these teams are working
+          in different places, sometimes in different time zones. It is practically impossible for each team to have a view of the whole system. Consequently, their priorities are usually to complete their part of the system without regard for wider
+          systems issues.
+        </li>
+        <li>
+          Large systems are “brownfield systems” (Hopkins and Jenkins, 2008); that is
+          they include and interact with a number of existing systems. Many of the system
+          requirements are concerned with this interaction and so don’t really lend themselves to flexibility and incremental development. Political issues can also be
+          significant here — often the easiest solution to a problem is to change an existing
+          system. However, this requires negotiation with the managers of that system to
+          convince them that the changes can be implemented without risk to the system’s
+          operation.
+        </li>
+        <li>
+          Where several systems are integrated to create a system, a significant fraction of
+          the development is concerned with system configuration rather than original
+          code development. This is not necessarily compatible with incremental development and frequent system integration.
+        </li>
+        <li>
+          Large systems and their development processes are often constrained by external
+          rules and regulations limiting the way that they can be developed, that require
+          certain types of system documentation to be produced, etc.
+        </li>
+        <li>
+          Large systems have a long procurement and development time. It is difficult to
+          maintain coherent teams who know about the system over that period as,
+          inevitably, people move on to other jobs and projects.
+        </li>
+        <li>
+          Large systems usually have a diverse set of stakeholders. For example, nurses and
+          administrators may be the end-users of a medical system but senior medical staff,
+          hospital managers, etc. are also stakeholders in the system. It is practically impossible to involve all of these different stakeholders in the development process.
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Perspectives on scaling agile</h2>
+      <p>There are two perspectives on the scaling of agile methods:</p>
+      <ol>
+        <li>
+          <strong>Scaling up</strong> — using agile methods to develop large software systems that cannot be developed by a single small team.
+        </li>
+        <li>
+          <strong>Scaling out</strong> — introducing agile methods across a large organization with many years of software development experience.
+        </li>
+      </ol>
+
+      <p>
+        Agile methods have to be adapted to cope with large systems engineering.
+        Leffingwell (2007) argues that it is essential to maintain the fundamentals of agile
+        methods — flexible planning, frequent system releases, continuous integration,
+        test-driven development, and good team communications. The critical adaptations that have to be introduced include:
+      </p>
+
+      <h3>Critical adaptations for large systems</h3>
+      <ol>
+        <li>
+          For large systems development, it is not possible to focus only on the code of the
+          system. You need to do more up-front design and system documentation. The
+          software architecture has to be designed and there has to be documentation produced to describe critical aspects of the system, such as database schemas and the
+          work breakdown across teams.
+        </li>
+        <li>
+          Cross-team communication mechanisms have to be designed and used. This
+          should involve regular phone and video conferences between team members and
+          frequent, short electronic meetings where teams update each other on progress.
+          A range of communication channels such as e-mail, instant messaging, wikis,
+          and social networking systems should be provided to facilitate communications.
+        </li>
+        <li>
+          Continuous integration, where the whole system is built every time any developer
+          checks in a change, is practically impossible when several separate programs must
+          be integrated to create the system. However, it is essential to maintain frequent
+          system builds and regular releases. This may require new configuration management tools that support multi-team software development.
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Adoption differences &amp; challenges</h2>
+      <p>
+        Small software companies that develop software products have been among the
+        most enthusiastic adopters of agile methods. These companies are not constrained by
+        organizational bureaucracies or process standards and they can change quickly to
+        adopt new ideas. Larger companies have experimented with agile methods in specific projects, but it is much more difficult for them to ‘scale out’ these methods across the organization. Lindvall et al. (2004) discuss some of the problems in scaling-out agile methods in four large technology companies.
+      </p>
+
+      <h3>Why introducing agile in large companies is difficult</h3>
+      <ol>
+        <li>
+          Project managers who do not have experience of agile methods may be reluctant
+          to accept the risk of a new approach, as they do not know how this will affect
+          their particular projects.
+        </li>
+        <li>
+          Large organizations often have quality procedures and standards that all projects
+          are expected to follow and, because of their bureaucratic nature, these are likely to
+          be incompatible with agile methods. Sometimes these are supported by mandated software tools (e.g., requirements management tools).
+        </li>
+        <li>
+          Agile methods seem to work best when team members have a relatively high
+          skill level. Within large organizations there may be a wide range of skills and
+          abilities, and people with lower skill levels may not be effective team members in agile processes.
+        </li>
+        <li>
+          There may be cultural resistance to agile methods, especially in organizations
+          with a long history of conventional systems engineering processes. Change management and testing procedures are examples of company procedures that may be incompatible with agile methods. For example, strict change-approval processes conflict with the refactoring and rapid-change philosophies in XP, and external testing team handovers can conflict with test-first/test-often approaches.
+        </li>
+      </ol>
+
+      <p>
+        Introducing and sustaining the use of agile methods across a large organization is
+        a process of cultural change. Cultural change takes time and often requires strong advocacy, management support, and dedicated resources. At the time of writing, few large companies had made a successful transition to organization-wide agile development.
+      </p>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>Key points</h2>
+      <ul>
+        <li><strong>Agile methods</strong> are incremental approaches focusing on rapid development, frequent releases, reduced process overhead, and high-quality code; they involve customers directly.</li>
+        <li>The choice between agile and plan-driven approaches depends on the software type, team capability, and company culture.</li>
+        <li><strong>Extreme Programming (XP)</strong> integrates practices like frequent releases, continuous improvement, and customer participation.</li>
+        <li>A strength of XP is writing automated tests before implementing features; all tests must pass when an increment is integrated.</li>
+        <li>Scaling agile to large systems requires some up-front design and documentation; continuous integration across many teams is challenging but frequent builds/releases remain essential.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Further reading</h2>
+      <p>
+        Suggested sources mentioned in the text:
+      </p>
+      <ul>
+        <li>Kent Beck — <em>Extreme Programming Explained</em> (Addison-Wesley, 2000).</li>
+        <li>B. Boehm — “Get Ready for Agile Methods, With Care”, <em>IEEE Computer</em>, January 2002.</li>
+        <li>D. Leffingwell — <em>Scaling Software Agility: Best Practices for Large Enterprises</em> (Addison-Wesley, 2007).</li>
+        <li>M. Holcombe — <em>Running an Agile Software Development Project</em> (John Wiley &amp; Sons, 2008).</li>
+      </ul>
+    </section>
+  </article>
+
+  <footer>
+    <p><small></small></p>
+  </footer>
+
+</body>
+</html>
