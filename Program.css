@@ -1,0 +1,14 @@
+:root {
+    --primary-color : #40739e;
+    --dark-color : #353b48;
+    --main-color : #f5f6fa;
+}
+
+
+footer {
+    background-color: var(--dark-color);
+    margin-top: 60px;
+    padding: 20px ;
+    p {color: var(--main-color)}
+    p {letter-spacing: 0.5px;}
+}
