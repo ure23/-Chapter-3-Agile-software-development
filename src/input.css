@@ -1,1 +1,216 @@
 @import "tailwindcss";
+
+nav {
+  @apply 
+    grid
+    grid-cols-3
+    gap-1
+    col-span-1
+    text-[11px]
+    sm:sticky top-0 
+
+    md:fixed md:top-0 md:left-0 md:right-0
+    lg:grid-cols-6
+    lg:gap-4
+    lg:p-[5px]
+    lg:text-[5px]
+    lg:py-[10px]
+    
+    text-[#E9E9E9]
+    bg-[#e8e8e831] 
+    shadow-[0_4px_30px_rgba(0,0,0,0.1)] 
+    backdrop-blur-[9px]
+    shadow-xl;
+}
+
+
+.home {
+    @apply
+    col-span-3
+
+    md:col-span-1
+}
+
+.sto {
+    @apply
+    col-span-2
+    md:col-span-1
+    lg:col-span-1
+}
+
+
+nav a {
+    @apply 
+    text-[12px] px-[12px] py-[8px]
+    sm:text-[10px] sm:px-[12px] sm:py-[10px]
+    md:text-[11px] md:px-[12px] md:py-[14px]
+    lg:text-[12px] lg:px-[12px] lg:py-[16px] 
+    no-underline 
+    text-center 
+    inline-block 
+    transition-colors 
+    duration-300 
+    rounded-[9px] 
+    border border-[var(--primary-color)] 
+}
+
+nav a:hover {
+    @apply
+    bg-[rgba(255,255,255,0.1)]
+    backdrop-blur-[20px] 
+    rounded-[9px];
+}
+
+
+.body {
+    @apply
+    bg-[#001BB7]
+    text-[#E9E9E9]
+}
+
+.main {
+    @apply
+
+    mx-[30px]
+    md:mx-25
+    lg:mx-50
+
+
+}
+
+.section {
+    @apply
+    bg-[#0046FF]
+    p-10
+    rounded-lg
+    m-10
+    shadow-xl
+}
+
+.maintitle {
+    @apply
+    text-[#FFF0DD]
+    font-bold
+    p-[10px] 
+    rounded-[10px]
+    text-base/40
+
+    text-[50px]
+    mt-[60px]
+    mb-[-20px]
+
+    md:text-[100px]
+    md:mt-[200px]
+
+    lg:text-[150px]
+    lg:mt-[80px]
+}
+
+.paragraph {
+    @apply 
+    py-[10px] 
+    rounded-[9px] 
+    max-w-fit 
+    text-justify;
+}
+
+.ulist {
+    @apply 
+    list-disc 
+    list-inside 
+    py-[15px] 
+    rounded-[9px] 
+    max-w-fit 
+    text-justify
+    px-[40px]
+}
+
+.olists {
+    @apply 
+    list-decimal 
+    list-inside 
+    py-[10px] 
+    rounded-[9px] 
+    max-w-fit 
+    text-justify
+    px-[40px];
+}
+
+.sectionism {
+  @apply
+    bg-[#002DFF]
+    p-10
+    my-8
+    transition 
+    delay-150 
+    duration-100 
+    ease-in-out 
+    hover:-translate-y-1 
+    hover:scale-110 
+    hover:bg-[#061b96]
+    origin-top; /* scaling grows downward instead of overlapping nav */
+}
+
+
+.titletwo {
+    @apply
+    text-[#FFF0DD]
+    font-bold
+    text-2xl
+}
+
+.image {
+    @apply
+    mx-auto
+    my-5
+    rounded-lg
+    shadow-lg
+    transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500
+}
+
+.figures {
+    @apply
+    text-center
+    italic
+    my-2
+}
+
+ .list {
+    @apply
+    py-[10px]
+ }
+
+.footer {
+    @apply
+    bg-[#061b96]
+    text-center
+    text-xs
+    p-[10px]
+
+    md:p-[50px]
+}
+
+.maintitlehome{
+    @apply
+    text-[#FFF0DD]
+    font-bold
+    p-[10px] 
+    rounded-[10px]
+    text-base/20
+    
+
+    text-[50px]
+    mt-[60px]
+    mb-[-20px]
+    pl-20
+
+    md:text-[100px]
+    md:mt-[200px]
+    md:pl-40
+    md:text-base/40
+
+    lg:text-[150px]
+    lg:mt-[80px]
+    lg:pl-60
+    lg:text-base/40
+}
