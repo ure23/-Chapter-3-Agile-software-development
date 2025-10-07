@@ -1,4 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap');
 @import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-BBH: "BBH Sans Hegarty", sans-serif;
+}
+
+
 
 nav {
   @apply 
@@ -87,23 +98,36 @@ nav a:hover {
     shadow-xl
 }
 
+.font-BBH {
+    font-family: var(--font-BBH);
+}
+
+
+
 .maintitle {
+    font-family: var(--font-BBH);
     @apply
     text-[#FFF0DD]
     font-bold
     p-[10px] 
     rounded-[10px]
-    text-base/40
+    text-base/20
+    
+
+    
+    
 
     text-[50px]
     mt-[60px]
     mb-[-20px]
 
-    md:text-[100px]
+    md:text-[80px]
     md:mt-[200px]
+    md:text-base/40
 
-    lg:text-[150px]
+    lg:text-[100px]
     lg:mt-[80px]
+    lg:text-base/50
 }
 
 .paragraph {
