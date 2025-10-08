@@ -160,6 +160,7 @@ nav a:hover {
     px-[40px];
 }
 
+/*Andrae's Custom Style*/
 .sectionism {
   @apply
     bg-[#002DFF]
@@ -172,8 +173,9 @@ nav a:hover {
     hover:-translate-y-1 
     hover:scale-110 
     hover:bg-[#061b96]
-    origin-top; /* scaling grows downward instead of overlapping nav */
+    origin-top;
 }
+/*Andrae's Custom Style*/
 
 
 .titletwo {
@@ -238,3 +240,33 @@ nav a:hover {
     lg:pl-60
     lg:text-base/40
 }
+
+
+/*Nino's Custom Style*/
+
+/*Nino's Custom Style*/
+
+
+
+
+/*Ure's Custom Style*/
+
+/*Ure's Custom Style*/
+
+
+
+
+/*Mia's Custom Style*/
+
+/*Mia's Custom Style*/
+
+
+
+
+
+
+/*Bello's Custom Style*/
+
+
+/*Bello's Custom Style*/
+
