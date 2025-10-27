@@ -9,8 +9,11 @@
   --font-BBH: "BBH Sans Hegarty", sans-serif;
 }
 
+.font-BBH {
+    font-family: var(--font-BBH);
+}
 
-
+/*These are for the navigation bar codes*/
 nav {
   @apply 
     grid
@@ -18,9 +21,11 @@ nav {
     gap-1
     col-span-1
     text-[11px]
+
     sm:sticky top-0 
 
     md:fixed md:top-0 md:left-0 md:right-0
+    
     lg:grid-cols-6
     lg:gap-4
     lg:p-[5px]
@@ -34,28 +39,10 @@ nav {
     shadow-xl;
 }
 
-
-.home {
-    @apply
-    col-span-3
-
-    md:col-span-1
-}
-
-.sto {
-    @apply
-    col-span-2
-    md:col-span-1
-    lg:col-span-1
-}
-
-
 nav a {
     @apply 
-    text-[12px] px-[12px] py-[8px]
-    sm:text-[10px] sm:px-[12px] sm:py-[10px]
-    md:text-[11px] md:px-[12px] md:py-[14px]
-    lg:text-[12px] lg:px-[12px] lg:py-[16px] 
+    text-[11px]
+    p-2
     no-underline 
     text-center 
     inline-block 
@@ -69,26 +56,47 @@ nav a:hover {
     @apply
     bg-[rgba(255,255,255,0.1)]
     backdrop-blur-[20px] 
-    rounded-[9px];
+    rounded-[9px]
+    font-bold
+    shadow-xl;
+}
+/*These are for the navigation bar codes*/
+
+
+
+/*These are for the custom Navigation bar buttons*/
+.home {
+    @apply
+    col-span-3
+
+    md:col-span-1
 }
 
+.sto {
+    @apply
+    col-span-2
+    md:col-span-1
+    lg:col-span-1
+}
+/*These are for the custom Navigation bar buttons*/
 
+/*Universal Body class code*/
 .body {
     @apply
     bg-[#001BB7]
     text-[#E9E9E9]
 }
 
+/*Universal Main class code*/
 .main {
     @apply
 
     mx-[30px]
     md:mx-25
     lg:mx-50
-
-
 }
 
+/*Universal code for sections*/
 .section {
     @apply
     bg-[#0046FF]
@@ -98,12 +106,45 @@ nav a:hover {
     shadow-xl
 }
 
-.font-BBH {
-    font-family: var(--font-BBH);
+/*Index.html changes for Grid and flex (index.html)*/
+.grid {
+    @apply
+    flex
+    flex-col
+    lg:flex-row
 }
 
+.sectionone {
+    @apply
+    bg-[#0046FF]
+    p-5
+    rounded-lg
+    shadow-xl
+    w-full
+    m-2
 
+    /* 'md:lg:h-[100]' was removed as it's invalid syntax */
 
+    lg:w-1/3
+    lg:h-full
+    lg:my-10
+    lg:mx-2
+}
+
+.sectiontwo {
+    @apply
+    bg-[#0046FF]
+    p-10
+    rounded-lg
+    shadow-xl
+    w-full
+    m-2
+    lg:w-2/3
+    lg:m-10
+}
+/*Index.html changes for Grid and flex*/
+
+/*Universal code for the Main title*/
 .maintitle {
     font-family: var(--font-BBH);
     @apply
@@ -113,10 +154,6 @@ nav a:hover {
     rounded-[10px]
     text-base/20
     
-
-    
-    
-
     text-[50px]
     mt-[60px]
     mb-[-20px]
@@ -130,14 +167,17 @@ nav a:hover {
     lg:text-base/50
 }
 
+/*Universal code for paragraphs/ texts*/
 .paragraph {
     @apply 
     py-[10px] 
     rounded-[9px] 
     max-w-fit 
+    indent-8
     text-justify;
 }
 
+/*Universal code for unordered list*/
 .ulist {
     @apply 
     list-disc 
@@ -149,6 +189,7 @@ nav a:hover {
     px-[40px]
 }
 
+/*Universal code for ordered list*/
 .olists {
     @apply 
     list-decimal 
@@ -158,6 +199,51 @@ nav a:hover {
     max-w-fit 
     text-justify
     px-[40px];
+}
+
+/*Universal code for list*/
+.list {
+    @apply
+    py-[10px]
+ }
+
+
+
+/*Universal code for Secondary titles*/
+.titletwo {
+    @apply
+    text-[#FFF0DD]
+    font-bold
+    text-2xl
+}
+
+/*Universal code for images*/
+.image {
+    @apply
+    mx-auto
+    my-5
+    rounded-lg
+    shadow-lg
+    transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500
+}
+
+/*Universal code for image text titles/figures */
+.figures {
+    @apply
+    text-center
+    italic
+    my-2
+}
+
+/*Universal code for the footer*/
+.footer {
+    @apply
+    bg-[#061b96]
+    text-center
+    text-xs
+    p-[10px]
+
+    md:p-[50px]
 }
 
 /*Andrae's Custom Style*/
@@ -177,69 +263,6 @@ nav a:hover {
 }
 /*Andrae's Custom Style*/
 
-
-.titletwo {
-    @apply
-    text-[#FFF0DD]
-    font-bold
-    text-2xl
-}
-
-.image {
-    @apply
-    mx-auto
-    my-5
-    rounded-lg
-    shadow-lg
-    transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500
-}
-
-.figures {
-    @apply
-    text-center
-    italic
-    my-2
-}
-
- .list {
-    @apply
-    py-[10px]
- }
-
-.footer {
-    @apply
-    bg-[#061b96]
-    text-center
-    text-xs
-    p-[10px]
-
-    md:p-[50px]
-}
-
-.maintitlehome{
-    @apply
-    text-[#FFF0DD]
-    font-bold
-    p-[10px] 
-    rounded-[10px]
-    text-base/20
-    
-
-    text-[50px]
-    mt-[60px]
-    mb-[-20px]
-    pl-20
-
-    md:text-[100px]
-    md:mt-[200px]
-    md:pl-40
-    md:text-base/40
-
-    lg:text-[150px]
-    lg:mt-[80px]
-    lg:pl-60
-    lg:text-base/40
-}
 
 
 /*Nino's Custom Style*/
