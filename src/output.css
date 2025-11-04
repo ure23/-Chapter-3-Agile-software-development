@@ -21,6 +21,7 @@
     --font-weight-bold: 700;
     --leading-relaxed: 1.625;
     --radius-lg: 0.5rem;
+    --radius-xl: 0.75rem;
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --animate-bounce: bounce 1s infinite;
     --default-transition-duration: 150ms;
@@ -514,6 +515,104 @@ nav a:hover {
     }
   }
 }
+.sectionismonin {
+  margin-block: calc(var(--spacing) * 8);
+  border-radius: var(--radius-xl);
+  background-color: #002DFF;
+  padding: calc(var(--spacing) * 10);
+}
+.imageonin {
+  margin-inline: auto;
+  margin-block: calc(var(--spacing) * 5);
+  border-radius: var(--radius-lg);
+  --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  transition-delay: 150ms;
+  --tw-duration: 300ms;
+  transition-duration: 300ms;
+  --tw-ease: var(--ease-in-out);
+  transition-timing-function: var(--ease-in-out);
+  &:hover {
+    @media (hover: hover) {
+      --tw-translate-y: calc(var(--spacing) * -1);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  &:hover {
+    @media (hover: hover) {
+      --tw-scale-x: 110%;
+      --tw-scale-y: 110%;
+      --tw-scale-z: 110%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+  max-width: 70%;
+  height: auto;
+  opacity: 0.4;
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.imageonin:hover {
+  transform: rotate(0deg) scale(1.10) translateY(-0.25rem);
+  opacity: 1;
+}
+.figureonin {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.paragraphonin {
+  cursor: pointer;
+  border-radius: var(--radius-lg);
+  padding-inline: 18px;
+  padding-block: 12px;
+  text-align: justify;
+  transition-property: all;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 700ms;
+  transition-duration: 700ms;
+  --tw-ease: var(--ease-in-out);
+  transition-timing-function: var(--ease-in-out);
+  box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.1);
+  line-height: 1.7;
+  color: #E9E9E9;
+}
+.paragraphonin:hover {
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.3), inset 0 0 10px rgba(0, 255, 255, 0.3);
+  transform: translateX(3px);
+  filter: brightness(1.5);
+}
+.olistsonin {
+  margin-block: calc(var(--spacing) * 8);
+  list-style-position: inside;
+  list-style-type: decimal;
+  :where(& > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 3) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)));
+  }
+  border-radius: var(--radius-lg);
+  border-left-style: var(--tw-border-style);
+  border-left-width: 7px;
+  border-color: #00FFFF;
+  background-color: color-mix(in oklab, #001BB7 30%, transparent);
+  padding-inline: calc(var(--spacing) * 8);
+  padding-block: calc(var(--spacing) * 6);
+  text-align: justify;
+  --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6), inset 0 0 10px rgba(0, 255, 255, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+.olistsonin li:hover {
+  background: linear-gradient(90deg, rgba(0,255,255,0.2), rgba(0,0,255,0.2));
+  border-left-color: #00FFFF;
+  transform: translateX(5px);
+  transition: all 0.3s ease-in-out;
+}
 .html-body {
   scroll-behavior: smooth;
 }
@@ -774,6 +873,11 @@ nav a:hover {
   inherits: false;
   initial-value: 1;
 }
+@property --tw-space-y-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
 @property --tw-leading {
   syntax: "*";
   inherits: false;
@@ -825,6 +929,7 @@ nav a:hover {
       --tw-scale-x: 1;
       --tw-scale-y: 1;
       --tw-scale-z: 1;
+      --tw-space-y-reverse: 0;
       --tw-leading: initial;
     }
   }
