@@ -1,68 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="html-body">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EXTREME PROGRAMMING</title>
+    <link href="src/output.css" rel="stylesheet">
+
 </head>
-<body>
 
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="Subtopicone.html">3.1 Agile methods</a>
-            <a href="subtopictwo.html">3.2 Plan-driven and agile development</a>
-            <a href="ExtremeProgramming.html">3.3 Extreme programming</a>
-            <a href="Subtopicfour.html">3.4 Agile project management</a>
-            <a href="Subtopicfive.html">3.5 Scaling agile methods</a>
-        </nav>
-    </header>
+<body id="top" class="body">
 
-    <main>
-        <section>
-            <img src="1st.PNG" alt="">
+    <nav class="nav">
+            <a class="home" href="index.html">Home</a>
+            <a class="sto" href="Subtopicone.html">3.1 Agile Methods</a>
+            <a href="subtopictwo.html">3.2 Plan-Driven & Agile Dev</a>
+            <a href="ExtremeProgramming.html">3.3 Extreme Programming</a>
+            <a href="Subtopicfour.html">3.4 Agile Project Management</a>
+            <a href="Subtopicfive.html">3.5 Scaling Agile Methods</a>
+    </nav>
+
+
+    <main class="main-ure">
+        <h1 class="maintitle text-center mb-10">3.3 EXTREME PROGRAMMING</h1>
+
+    <div class="section-container">
+
+        <section class="section-ure">
+            <h3 class="titletwo">Incremental Delivery</h3>
+            <img class="image" src="1st.PNG" alt="Incremental Delivery">
+            <p class="figures">Figure 2.10 Incremental delivery process model</p>
 
             <article>
-                <h3>Incremental delivery</h3>
-                <p>Incremental delivery (Figure 2.10) is an approach to software development where
+                <p class="paragraph">Incremental delivery (Figure 2.10) is an approach to software development where
                     some of the developed increments are delivered to the customer and deployed for use
                     in an operational environment. In an incremental delivery process, customers identify, in outline, the services to be provided by the system. They identify which of the
                     services are most important and which are least important to them. A number of
                     delivery increments are then defined, with each increment providing a sub-set of the
                     system functionality. The allocation of services to increments depends on the service
                     priority, with the highest-priority services implemented and delivered first</p>
-                <p>     Once the system increments have been identified, the requirements for the services to be delivered in the first increment are defined in detail and that increment is
+                <p class="paragraph"> Once the system increments have been identified, the requirements for the services to be delivered in the first increment are defined in detail and that increment is
                     developed. During development, further requirements analysis for later increments
                     can take place but requirements changes for the current increment are not accepted.</p>
-                </p>    Once an increment is completed and delivered, customers can put it into service.
+                <p class="paragraph"> Once an increment is completed and delivered, customers can put it into service.
                     This means that they take early delivery of part of the system functionality. They can
                     experiment with the system and this helps them clarify their requirements for later system increments. As new increments are completed, they are integrated with existing
                     increments so that the system functionality improves with each delivered increment.</p>
 
-                <p>Incremental delivery has a number of advantages:</p>
-                <ol>
-                    <li>Customers can use the early increments as prototypes and gain experience that
+                <p class="paragraph">Incremental delivery has a number of advantages:</p>
+                <ol class="olists">
+                    <li class="list">Customers can use the early increments as prototypes and gain experience that
                         informs their requirements for later system increments. Unlike prototypes, these
                         are part of the real system so there is no re-learning when the complete system is
                         available.</li>
-                    <li>Customers do not have to wait until the entire system is delivered before they
+                    <li class="list">Customers do not have to wait until the entire system is delivered before they
                         can gain value from it. The first increment satisfies their most critical requirements so they can use the software immediately.</li>
-                    <li> The process maintains the benefits of incremental development in that it should
+                    <li class="list"> The process maintains the benefits of incremental development in that it should
                         be relatively easy to incorporate changes into the system.</li>
-                    <li> As the highest-priority services are delivered first and increments then integrated, the most important system services receive the most testing. This means
+                    <li class="list"> As the highest-priority services are delivered first and increments then integrated, the most important system services receive the most testing. This means
                         that customers are less likely to encounter software failures in the most important parts of the system.</li>
                  </ol>
-                
-                <p>However, there are problems with incremental delivery:</p>
-                <ol>
-                    <li> Most systems require a set of basic facilities that are used by different parts of the
+
+                <p class="paragraph">However, there are problems with incremental delivery:</p>
+                <ol class="olists">
+                    <li class="list"> Most systems require a set of basic facilities that are used by different parts of the
                         system. As requirements are not defined in detail until an increment is to be
                         implemented, it can be hard to identify common facilities that are needed by all
                         increments.</li>
-                    <li>Iterative development can also be difficult when a replacement system is being
+                    <li class="list">Iterative development can also be difficult when a replacement system is being
                         developed. Users want all of the functionality of the old system and are often
                         unwilling to experiment with an incomplete new system. Therefore, getting useful customer feedback is difficult.</li>
-                    <li>The essence of iterative processes is that the specification is developed in conjunction with the software. However, this conflicts with the procurement model of
+                    <li class="list">The essence of iterative processes is that the specification is developed in conjunction with the software. However, this conflicts with the procurement model of
                         many organizations, where the complete system specification is part of the system
                         development contract. In the incremental approach, there is no complete system
                         specification until the final increment is specified. This requires a new form of
@@ -70,21 +77,22 @@
                         accommodate.</li>
                 </ol>
 
-                <p>There are some types of system where incremental development and delivery is
+                <p class="paragraph">There are some types of system where incremental development and delivery is
                     not the best approach. These are very large systems where development may involve
                     teams working in different locations, some embedded systems where the software
                     depends on hardware development and some critical systems where all the requirements must be analyzed to check for interactions that may compromise the safety or
                     security of the system</p>
-                <p>These systems, of course, suffer from the same problems of uncertain and changing requirements. Therefore, to address these problems and get some of the benefits
+                <p class="paragraph">These systems, of course, suffer from the same problems of uncertain and changing requirements. Therefore, to address these problems and get some of the benefits
                     of incremental development, a process may be used in which a system prototype is
                     developed iteratively and used as a platform for experiments with the system
                     requirements and design. With the experience gained from the prototype, definitive
                     requirements can then be agreed.</p>
             </article>
-
+        </section>
+        <section class="section-ure">
             <article>
-                <h3>Boehm's spiral model</h3>
-                <p>A risk-driven software process framework (the spiral model) was proposed by
+                <h3 class="titletwo">Boehm's Spiral Model</h3>
+                <p class="paragraph">A risk-driven software process framework (the spiral model) was proposed by
                     Boehm (1988). This is shown in Figure 2.11. Here, the software process is represented as a spiral, rather than a sequence of activities with some backtracking from
                     one activity to another. Each loop in the spiral represents a phase of the software
                     process. Thus, the innermost loop might be concerned with system feasibility, the
@@ -93,33 +101,33 @@
                     changes are a result of project risks and includes explicit risk management activities
                     to reduce these risks.</p>
                 <figure>
-                    <img src="2nd.PNG" alt="">
-                    <caption>Figure 2.11 Boehm's spiral model of the software process (©IEEE 1988)</caption>
+                    <img class="image" src="2nd.PNG" alt="Spiral Model">
+                    <p class="figures">Figure 2.11 Boehm's spiral model of the software process (©IEEE 1988)</p>
                 </figure>
-                
-                <p>Each loop in the spiral is split into four sectors:</p>
-                <ol>
-                    <li><i>Objective setting</i> Specific objectives for that phase of the project are defined.
+
+                <p class="paragraph">Each loop in the spiral is split into four sectors:</p>
+                <ol class="olists">
+                    <li class="list"><i>Objective setting</i> Specific objectives for that phase of the project are defined.
                         Constraints on the process and the product are identified and a detailed management plan is drawn up. Project risks are identified. Alternative strategies,
                         depending on these risks, may be planned.</li>
-                    <li><i>Risk assessment and reduction</i> For each of the identified project risks, a detailed
+                    <li class="list"><i>Risk assessment and reduction</i> For each of the identified project risks, a detailed
                         analysis is carried out. Steps are taken to reduce the risk. For example, if there is a
                         risk that the requirements are inappropriate, a prototype system may be developed.</li>
-                    <li><i>Development and validation</i> After risk evaluation, a development model for the
+                    <li class="list"><i>Development and validation</i> After risk evaluation, a development model for the
                         system is chosen. For example, throwaway prototyping may be the best development approach if user interface risks are dominant. If safety risks are the main
                         consideration, development based on formal transformations may be the most
                         appropriate process, and so on. If the main identified risk is sub-system integration, the waterfall model may be the best development model to use.</li>
-                    <li><i>Planning</i> The project is reviewed and a decision made whether to continue with
+                    <li class="list"><i>Planning</i> The project is reviewed and a decision made whether to continue with
                         a further loop of the spiral. If it is decided to continue, plans are drawn up for the
                         next phase of the project.</li>
                 </ol>
 
-                <p>The main difference between the spiral model and other software process models is
+                <p class="paragraph">The main difference between the spiral model and other software process models is
                     its explicit recognition of risk. A cycle of the spiral begins by elaborating objectives
                     such as performance and functionality. Alternative ways of achieving these objectives, and dealing with the constraints on each of them, are then enumerated. Each
                     alternative is assessed against each objective and sources of project risk are identified. The next step is to resolve these risks by information-gathering activities such
                     as more detailed analysis, prototyping, and simulation.</p>
-                <p>Once risks have been assessed, some development is carried out, followed by a planning activity for the next phase of the process. Informally, risk simply means something
+                <p class="paragraph">Once risks have been assessed, some development is carried out, followed by a planning activity for the next phase of the process. Informally, risk simply means something
                     that can go wrong. For example, if the intention is to use a new programming language,
                     a risk is that the available compilers are unreliable or do not produce sufficiently efficient object code. Risks lead to proposed software changes and project problems such as
                     schedule and cost overrun, so risk minimization is a very important project management
@@ -127,45 +135,47 @@
                     Chapter 22.</p>
             </article>
         </section>
+    </div>
 
-        </section>
-            <h3>The Rational Unified Process</h3>
-            <p>The Rational Unified Process (RUP) (Krutchen, 2003) is an example of a modern
+    <div class="section-container-full">
+        <section class ="section-ure mt8">
+            <h3 class ="titletwo">The Rational Unified Process</h3>
+            <p class ="paragraph">The Rational Unified Process (RUP) (Krutchen, 2003) is an example of a modern
                 process model that has been derived from work on the UML and the associated Unified
                 Software Development Process (Rumbaugh, et al., 1999; Arlow and Neustadt, 2005).
                 It include the description as it is a good example of a hybrid process model.
                 It brings together elements from all of the generic process models (Section 2.1), illustrates good practice in specification and design (Section 2.2) and supports prototyping
                 and incremental delivery (Section 2.3).</p>
-            <p>The RUP recognizes that conventional process models present a single view of
+            <p class ="paragraph">The RUP recognizes that conventional process models present a single view of
                 the process. In contrast, the RUP is normally described from three perspectives:</p>
-            <ol>
-                <li>A dynamic perspective, which shows the phases of the model over time.</li>
-                <li> A static perspective, which shows the process activities that are enacted.</li>
-                <li> A practice perspective, which suggests good practices to be used during the process.</li>
+            <ol class="olists">
+                <li class = "list">A dynamic perspective, which shows the phases of the model over time.</li>
+                <li class = "list"> A static perspective, which shows the process activities that are enacted.</li>
+                <li class = "list"> A practice perspective, which suggests good practices to be used during the process.</li>
             </ol>
 
-            <p>Most descriptions of the RUP attempt to combine the static and dynamic perspectives in a single diagram (Krutchen, 2003). The process harder to
+            <p class ="paragraph">Most descriptions of the RUP attempt to combine the static and dynamic perspectives in a single diagram (Krutchen, 2003). The process harder to
             understand, therefore using separated descriptions of each of these perspectives.</p>
-            <p>The RUP is a phased model that identifies four discrete phases in the software
+            <p class ="paragraph">The RUP is a phased model that identifies four discrete phases in the software
                 process. However, unlike the waterfall model where phases are equated with process
                 activities, the phases in the RUP are more closely related to business rather than
                 technical concerns. Figure 2.11 shows the phases in the RUP. These are:</p>
 
-            <ol>
-                <li><i>Inception</i> The goal of the inception phase is to establish a business case for the
+            <ol class="olists">
+                <li class="list"><i>Inception</i> The goal of the inception phase is to establish a business case for the
                     system. It should identify all external entities (people and systems) that will interact with the system and define these interactions. Then use this information to assess the contribution that the system makes to the business. 
                     If this contribution is minor, then the project may be cancelled after this phase.</li>
-                <li><i>Elaboration</i> The goals of the elaboration phase are to develop an understanding
+                <li class="list"><i>Elaboration</i> The goals of the elaboration phase are to develop an understanding
                     of the problem domain, establish an architectural framework for the system,
                     develop the project plan, and identify key project risks. On completion of this
                     phase it should have a requirements model for the system, which may be a set
                     of UML use-cases, an architectural description, and a development plan for the
                     software.</li>
-                <li><i>Construction</i> The construction phase involves system design, programming, and
+                <li class="list"><i>Construction</i> The construction phase involves system design, programming, and
                     testing. Parts of the system are developed in parallel and integrated during this
                     phase. On completion of this phase, it should have a working software system
                     and associated documentation that is ready for delivery to users.</li>
-                <li><i>Transition</i> The final phase of the RUP is concerned with moving the system
+                <li class="list"><i>Transition</i> The final phase of the RUP is concerned with moving the system
                     from the development community to the user community and making it work in
                     a real environment. This is something that is ignored in most software process
                     models but is, in fact, an expensive and sometimes problematic activity. On
@@ -173,42 +183,43 @@
                     working correctly in its operational environment.</li>
             </ol>
 
-            <p>Iteration within the RUP is supported in two ways. Each phase may be enacted in
+            <p class="paragraph">Iteration within the RUP is supported in two ways. Each phase may be enacted in
                 an iterative way with the results developed incrementally. In addition, the whole set
                 of phases may also be enacted incrementally, as shown by the looping arrow from
                 Transition to Inception in Figure 2.12</p>
-            <img src="4th.PNG" alt="">
-            <p>The static view of the RUP focuses on the activities that take place during the
+            <img class="image" src="4th.PNG" alt="RUP">
+            <p class="figures">Figure 2.12 The dynamic view of the Rational Unified Process</p>
+            <p class="paragraph">The static view of the RUP focuses on the activities that take place during the
                 development process. These are called workflows in the RUP description. There are
                 six core process workflows identified in the process and three core supporting workflows. The RUP has been designed in conjunction with the UML, so the workflow
                 description is oriented around associated UML models such as sequence models,
                 object models, etc. The core engineering and support workflows are described in
                 Figure 2.13.</p>
-            <p>The advantage in presenting dynamic and static views is that phases of the development process are not associated with specific workflows. In principle at least, all
+            <p class="paragraph">The advantage in presenting dynamic and static views is that phases of the development process are not associated with specific workflows. In principle at least, all
                 of the RUP workflows may be active at all stages of the process. In the early phases
                 of the process, most effort will probably be spent on workflows such as business
                 modelling and requirements and, in the later phases, in testing and deployment.</p>
             <figure>
-                <img src="5th.PNG" alt="">
-                <caption>Figure 2.13 Static workflows in the Rational Unified Process</caption>
+                <img class="image" src="5th.PNG" alt="Static Workflow">
+                <p class="figures">Figure 2.13 Static workflows in the Rational Unified Process</p>
             </figure>
-            
-            <p>The practice perspective on the RUP describes good software engineering practices that are recommended for use in systems development. Six fundamental best
+
+            <p class="paragraph">The practice perspective on the RUP describes good software engineering practices that are recommended for use in systems development. Six fundamental best
                 practices are recommended:</p>
             
-            <ol>
-                <li><i>Develop software iteratively</i> Plan increments of the system based on customer
+            <ol class="olists">
+                <li class ="list"><i>Develop software iteratively</i> Plan increments of the system based on customer
                     priorities and develop the highest-priority system features early in the development process.</li>
-                <li><i>Manage requirements</i> Explicitly document the customer's requirements and
+                <li class ="list"><i>Manage requirements</i> Explicitly document the customer's requirements and
                     keep track of changes to these requirements. Analyze the impact of changes on
                     the system before accepting them.</li>
-                <li><i>Use component-based architectures</i> Structure the system architecture into components, as discussed earlier in this chapter.</li>
-                <li><i>Visually model software</i> Use graphical UML models to present static and dynamic views of the software.</li>
-                <li><i>Verify software quality</i> Ensure that the software meets the organizational quality standards.</li>
-                <li><i>Control changes to software</i> Manage changes to the software using a change management system and configuration management procedures and tools.</li>
+                <li class ="list"><i>Use component-based architectures</i> Structure the system architecture into components, as discussed earlier in this chapter.</li>
+                <li class ="list"><i>Visually model software</i> Use graphical UML models to present static and dynamic views of the software.</li>
+                <li class ="list"><i>Verify software quality</i> Ensure that the software meets the organizational quality standards.</li>
+                <li class ="list"><i>Control changes to software</i> Manage changes to the software using a change management system and configuration management procedures and tools.</li>
             </ol>
 
-            <p>The RUP is not a suitable process for all types of development, e.g., embedded
+            <p class="paragraph">The RUP is not a suitable process for all types of development, e.g., embedded
                 software development. However, it does represent an approach that potentially combines the three generic process models discussed in Section 2.1. The most important
                 innovations in the RUP are the separation of phases and workflows, and the recognition that deploying software in a user’s environment is part of the process. Phases are
                 dynamic and have goals. Workflows are static and are technical activities that are not
@@ -216,100 +227,114 @@
                 achieve the goals of each phase.</p>
         </section>
 
-        <section>
-            <h3>Key Points</h3>
-            <ul>
-                <li>Software processes are the activities involved in producing a software system. Software process
-                    models are abstract representations of these processes.</li>
-                <li>General process models describe the organization of software processes. Examples of these general
-                    models include the waterfall model, incremental development, and reuse-oriented development</li>
-                <li>Requirements engineering is the process of developing a software specification. Specifications
-                    are intended to communicate the system needs of the customer to the system developers.</li>
-                <li>Design and implementation processes are concerned with transforming a requirements
-                    specification into an executable software system. Systematic design methods may be used as
-                    part of this transformation.</li>
-                <li>Software validation is the process of checking that the system conforms to its specification and
-                    that it meets the real needs of the users of the system.</li>
-                <li>Software evolution takes place when you change existing software systems to meet new
-                    requirements. Changes are continuous and the software must evolve to remain useful.</li>
-                <li>Processes should include activities to cope with change. This may involve a prototyping phase
-                    that helps avoid poor decisions on requirements and design. Processes may be structured for
-                    iterative development and delivery so that changes may be made without disrupting the system
-                    as a whole.</li>
-                <li>The Rational Unified Process is a modern generic process model that is organized into phases
-                    (inception, elaboration, construction, and transition) but separates activities (requirements,
-                    analysis, and design, etc.) from these phases.</li>
-            </ul>
-        </section>
-
-        <section>
-            <h3>Further Reading</h3>
-            <p><i>Managing Software Quality and Business Risk.</i> This is primarily a book about software management
-                but it includes an excellent chapter (Chapter 4) on process models. (M. Ould, John Wiley and Sons
-                Ltd, 1999.)</p>
-            <p><i>Process Models in Software Engineering.</i> This is an excellent overview of a wide range of software
-                engineering process models that have been proposed. (W. Scacchi, Encyclopaedia of Software
-                Engineering, ed. J.J. Marciniak, John Wiley and Sons, 2001.) http://www.ics.uci.edu/~wscacchi/
-                Papers/SE-Encyc/Process-Models-SE-Encyc.pdf.</p>
-            <p><i>The Rational Unified Process—An Introduction (3rd edition).</i> This is the most readable book
-                available on the RUP at the time of this writing. Krutchen describes the process well, but
-                I would like to have seen more on the practical difficulties of using the process. (P. Krutchen,
-                Addison-Wesley, 2003.)</p>
-        </section>
-
-        <section>
-            <h3>Exercises</h3>
-            <ol>
-                <li>Giving reasons to answer based on the type of system being developed, suggest the
+        <section class="section-ure">
+            <h3 class="titletwo">Exercises</h3>
+            <ol class="olists">
+                <li class="list">Giving reasons to answer based on the type of system being developed, suggest the
                     most appropriate generic software process model that might be used as a basis for managing
                     the development of the following systems:
-                <p>A system to control anti-lock braking in a car</p>
-                <p>A virtual reality system to support software maintenance</p>
-                <p>A university accounting system that replaces an existing system</p>
-                <p>An interactive travel planning system that helps users plan journeys with the lowest
+                <p class="paragraph">A system to control anti-lock braking in a car</p>
+                <p class="paragraph">A virtual reality system to support software maintenance</p>
+                <p class="paragraph">A university accounting system that replaces an existing system</p>
+                <p class="paragraph">An interactive travel planning system that helps users plan journeys with the lowest
                     environmental impact</p>
                 </li>
-                <li>Explain why incremental development is the most effective approach for developing business
+                <li class="list">Explain why incremental development is the most effective approach for developing business
                     software systems. Why is this model less appropriate for real-time systems engineering?</li>
-                <li>Consider the reuse-based process model shown in Figure 2.3. Explain why it is essential to
+                <li class="list">Consider the reuse-based process model shown in Figure 2.3. Explain why it is essential to
                     have two separate requirements engineering activities in the process.</li>
-                <li>Suggest why it is important to make a distinction between developing the user
+                <li class="list">Suggest why it is important to make a distinction between developing the user
                     requirements and developing system requirements in the requirements engineering
                     process.</li>
-                <li>Describe the main activities in the software design process and the outputs of these
+                <li class="list">Describe the main activities in the software design process and the outputs of these
                     activities. Using a diagram, show possible relationships between the outputs of these
                     activities.</li>
-                <li>Explain why change is inevitable in complex systems and give examples (apart from
+                <li class="list">Explain why change is inevitable in complex systems and give examples (apart from
                     prototyping and incremental delivery) of software process activities that help predict changes
                     and make the software being developed more resilient to change.</li>
-                <li>. Explain why systems developed as prototypes should not normally be used as production
+                <li class="list">Explain why systems developed as prototypes should not normally be used as production
                     systems.</li>
-                <li>Explain why Boehm's spiral model is an adaptable model that can support both change
+                <li class="list">Explain why Boehm's spiral model is an adaptable model that can support both change
                     avoidance and change tolerance activities. In practice, this model has not been widely used.
                     Suggest why this might be the case.</li>
-                <li>What are the advantages of providing static and dynamic views of the software process as in
+                <li class="list">What are the advantages of providing static and dynamic views of the software process as in
                     the Rational Unified Process?</li>
-                <li>Historically, the introduction of technology has caused profound changes in the labor market and,
+                <li class="list">Historically, the introduction of technology has caused profound changes in the labor market and,
                     temporarily at least, displaced people from jobs. Discuss whether the introduction of extensive
                     process automation is likely to have the same consequences for software engineers. If you don't
                     think it will, explain why not. If it will reduce job opportunities, is it ethical for the
                     engineers affected to passively or actively resist the introduction of this technology?</li>
             </ol>
         </section>
+
+        <section class="section-ure">
+            <details class="details">
+                <summary class=" titletwo summary">Key Points</summary>
+
+                <div class="div-section">
+                    <ul class="ulist">
+                        <li>Software processes are the activities involved in producing a software system. Software process
+                        models are abstract representations of these processes.</li>
+                        <li>General process models describe the organization of software processes. Examples of these general
+                        models include the waterfall model, incremental development, and reuse-oriented development</li>
+                        <li>Requirements engineering is the process of developing a software specification. Specifications
+                        are intended to communicate the system needs of the customer to the system developers.</li>
+                        <li>Design and implementation processes are concerned with transforming a requirements
+                        specification into an executable software system. Systematic design methods may be used as
+                        part of this transformation.</li>
+                        <li>Software validation is the process of checking that the system conforms to its specification and
+                        that it meets the real needs of the users of the system.</li>
+                        <li>Software evolution takes place when you change existing software systems to meet new
+                        requirements. Changes are continuous and the software must evolve to remain useful.</li>
+                        <li>Processes should include activities to cope with change. This may involve a prototyping phase
+                        that helps avoid poor decisions on requirements and design. Processes may be structured for
+                        iterative development and delivery so that changes may be made without disrupting the system
+                        as a whole.</li>
+                        <li>The Rational Unified Process is a modern generic process model that is organized into phases
+                        (inception, elaboration, construction, and transition) but separates activities (requirements,
+                        analysis, and design, etc.) from these phases.</li>
+                    </ul>
+                </div>
+            </details>
+        </section>
+
+        <section class="section-ure">
+            <details class="details">
+                <summary class="titletwo summary">Further Reading</summary>
+
+                <div class="div-section">
+                    <p class="paragraph"><i>Managing Software Quality and Business Risk.</i> This is primarily a book about software management
+                        but it includes an excellent chapter (Chapter 4) on process models. (M. Ould, John Wiley and Sons
+                        Ltd, 1999.)</p>
+                    <p class="paragraph"><i>Process Models in Software Engineering.</i> This is an excellent overview of a wide range of software
+                        engineering process models that have been proposed. (W. Scacchi, Encyclopaedia of Software
+                        Engineering, ed. J.J. Marciniak, John Wiley and Sons, 2001.) http://www.ics.uci.edu/~wscacchi/
+                        Papers/SE-Encyc/Process-Models-SE-Encyc.pdf.</p>
+                    <p><i>The Rational Unified Process—An Introduction (3rd edition).</i> This is the most readable book
+                        available on the RUP at the time of this writing. Krutchen describes the process well, but
+                        I would like to have seen more on the practical difficulties of using the process. (P. Krutchen,
+                        Addison-Wesley, 2003.)</p>
+                </div>
+            </details>
+        </section>
+    </div>
     </main>
 
-    <footer>
-
-
-        <p> Copyright © 2011, 2006, 2005, 2001, 1996 Pearson Education, Inc., publishing as Addison-Wesley. All
-            rights reserved. Manufactured in the United States of America. This publication is protected by copyright,
-            and permission should be obtained from the publisher prior to any prohibited reproduction, storage in a
-            retrieval system, or transmission in any form or by any means, electronic, mechanical, photocopying,
-            recording, or likewise. To obtain permission(s) to use material from this work, please submit a written
-            request to Pearson Education, Inc., Permissions Department, 501 Boylston Street, Suite 900, Boston,
-            Massachusetts 02116.</p>
-        
-    </footer>
+    <a href="#top" class="button-animation">↑ Top</a>
 
 </body>
+
+<footer class="footer">
+        <p id="footers"> Copyright © 2011, 2006, 2005, 2001, 1996 Pearson Education, Inc., publishing as Addison-Wesley.
+            All
+            rights reserved. <br><br>
+
+            Manufactured in the United States of America. This publication is protected by copyright,
+            and permission should be obtained from the publisher prior to any prohibited reproduction, storage in a
+            retrieval system, or transmission in any form or by any means, electronic, mechanical, photocopying,
+            recording, or likewise.</p>
+
+            <h3>Created by: Luraine Villaranda</h3>
+
+    </footer>
 </html>
